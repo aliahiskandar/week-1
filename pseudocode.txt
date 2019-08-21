@@ -1,0 +1,47 @@
+1.	READ massa,percepatan, gaya
+	INPUT massa= 600, percepatan =2
+	CONPUTE gaya = massa * percepatan
+	SHOW gaya
+2.	READ tahun
+	INPUT tahun
+	WRITE tahun
+	COMPUTE	
+		IF (tahun%400==0)
+
+			WRITE ” adalah tahun kabisat”
+
+		ELSE IF ((tahun % 100 != 0) && (tahun% 400 != 0)&&(tahun %4==0))
+
+			WRITE ” adalah tahun kabisat”
+
+		ELSE IF ((tahun % 100 != 0) && (tahun% 400 != 0)&&(tahun %4!=0))
+
+			WRITE ” bukan tahun kabisat”
+
+		ELSE IF ((tahun % 100 == 0) && (tahun% 400 != 0))
+
+			WRITE ” bukan tahun kabisat”
+
+		ELSE
+			WRITE "Silahkan masukkan angka dengan benar"
+
+3.	READ pakaian
+	INPUT pakaian = 20
+	WRITE "pakaian yang akan Foxie masukkan adalah" +pakaian
+	COMPUTE
+		FOR (i=1;i<=pakaian;i++)
+			WRITE "Memasukkan pakaian ke-" +i
+
+4.	READ siswa,periksa
+	INPUT siswa = 40
+	WRITE "ibu guru akan memeriksa kuku siswa, jumlah siswa =" +siswa
+	COMPUTE
+		FOR (i=1;i<=siswa;i++)
+			WRITE"Apakah siswa ke-"+i"memotong kuku?(Y/T)" 
+			INPUT periksa (y/t)
+				IF (siswa==y)
+					WRITE"good job baby"
+				ELSE IF (siswa!=t)
+					WRITE "HUKUM"
+				ELSE
+					WRITE "Silahkan Masukkan hurup dengan benar"
